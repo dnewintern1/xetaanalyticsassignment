@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="white">#FFFFFF</color>
 
     <color name="cornors">#404040</color>
+    <color name="cardVBack">#79F67E</color>
+    <color name="card2">#79F67E</color>
+    <color name="card3">#79F67E</color>
+    <color name="cardtext">#FFFFFF</color>
+    <color name="card4">#79F67E</color>
+    <color name="plancard1">#4368EC</color>
+    <color name="plancard2">#4368EC</color>
 </resources>

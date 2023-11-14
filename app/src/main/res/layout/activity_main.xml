@@ -140,9 +140,9 @@
                         android:id="@+id/textView6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="28dp"
-                        android:text="Build Bigger \nBiceps, Unleash \nYour Arm Power"
-                        android:textColor="@color/white"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/build_bigger_nbiceps_unleash_nyour_arm_power"
+                        android:textColor="@color/cardtext"
                         android:textSize="24sp"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toTopOf="@id/seekbar"
@@ -152,19 +152,19 @@
 
                     <SeekBar
                         android:id="@+id/seekbar"
-                        android:layout_width="match_parent"
+                        android:layout_width="90dp"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginBottom="40dp"
+                        android:layout_marginBottom="45dp"
                         android:max="50"
                         android:progress="20"
                         android:progressDrawable="@drawable/seekbarstyle"
-
                         android:thumb="@drawable/trappp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintStart_toStartOf="parent" />
+
 
                     <Button
                         android:layout_width="100dp"
@@ -200,7 +200,7 @@
             android:layout_marginStart="7dp"
             android:layout_marginTop="15dp"
             android:layout_marginBottom="12dp"
-            android:text="Enhance your journey with AI tracker"
+            android:text="@string/enhance_your_journey_with_ai_tracker"
             android:textSize="12sp"
             app:layout_constraintBottom_toTopOf="@id/cardView2"
             app:layout_constraintEnd_toEndOf="parent"
@@ -292,13 +292,16 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Accuracy "
+                                android:text="@string/accuracy"
+                                android:textColor="@color/white"
                                 android:textSize="12sp" />
 
                             <TextView
+                                android:id="@+id/accuracyID"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="80%"
+                                android:text="@string/_80"
+                                android:textColor="@color/white"
                                 android:textSize="12sp" />
 
                         </LinearLayout>
@@ -347,13 +350,16 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:maxLines="1"
-                                android:text="Workout  Duration"
+                                android:textColor="@color/white"
+                                android:text="@string/workout_duration"
                                 android:textSize="12sp" />
 
                             <TextView
+                                android:id="@+id/WorkoutDuration"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="2 hours"
+                                android:text="@string/_2_hours"
+                                android:textColor="@color/white"
                                 android:textSize="12sp" />
 
                         </LinearLayout>
@@ -419,12 +425,15 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Reps         "
+                                android:textColor="@color/white"
                                 android:textSize="12sp" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="15"
+                                android:id="@+id/RepsId"
+                                android:text="@string/_15"
+                                android:textColor="@color/white"
                                 android:textSize="12sp" />
 
                         </LinearLayout>
@@ -459,7 +468,8 @@
                                 app:layout_constraintHorizontal_bias="0.511"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
-                                app:layout_constraintVertical_bias="0.375" />
+                                app:layout_constraintVertical_bias="0.375"
+                                tools:ignore="ContentDescription" />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -473,12 +483,15 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Calories Burn "
+                                android:textColor="@color/white"
                                 android:textSize="12sp" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="80%"
+                                android:text="@string/_802"
+                                android:textColor="@color/white"
+                                android:id="@+id/calories_burned"
                                 android:textSize="12sp" />
 
                         </LinearLayout>
@@ -496,24 +509,23 @@
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/materialCardView"
             style="@style/CustomCardViewStyle2"
-            android:layout_width="306dp"
+            android:layout_width="316dp"
             android:layout_height="75dp"
+            android:layout_marginTop="-7dp"
             android:layout_marginBottom="21dp"
             app:cardElevation="8dp"
             app:layout_constraintBottom_toTopOf="@id/textView8"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
 
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cardView2">
 
             <androidx.constraintlayout.utils.widget.ImageFilterView
-                android:layout_width="500dp"
-                android:layout_height="160dp"
-                android:src="@drawable/gradienmini"
-                android:scaleType="fitXY"/>
-
-
+                android:layout_width="365dp"
+                android:layout_height="191dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/gradienmini" />
 
 
             <LinearLayout
@@ -538,8 +550,8 @@
                     <ImageView
                         android:layout_width="45dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/camlogo"
                         android:layout_marginTop="3dp"
+                        android:src="@drawable/camlogo"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.511"
@@ -558,26 +570,27 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="200+ people tracked their fitness         "
-                        android:textSize="10sp"/>
+                        android:text="@string/_200_people_tracked_their_fitness"
+                        android:textSize="10sp" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Why haven't you joined them yet? "
-                            android:textSize="10sp"/>
+                            android:text="@string/why_haven_t_you_joined_them_yet"
+                            android:textSize="10sp" />
+
                         <TextView
-                            android:layout_width=  "wrap_content"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="TRY NOW "
-                            android:textStyle="bold"
-                            android:textSize="10sp"/>
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
                     </LinearLayout>
-
 
 
                 </LinearLayout>
@@ -639,7 +652,7 @@
                     android:layout_width="187dp"
                     android:layout_height="128dp"
                     android:layout_marginTop="20dp"
-                    app:cardBackgroundColor="#4368EC"
+                    app:cardBackgroundColor="@color/plancard1"
                     app:cardCornerRadius="10dp"
                     app:cardElevation="8dp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -659,14 +672,14 @@
                             android:src="@drawable/starback" />
 
                         <TextView
-                            android:id="@+id/txtToned"
+                            android:id="@+id/TONEDtext"
                             style="bold"
-                            android:layout_width="wrap_content"
+                            android:layout_width="100dp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="5dp"
-                            android:layout_marginTop="40dp"
-                            android:text="TONED ARM"
-                            android:textColor="@color/white"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/toned_arm"
+                            android:textColor="@color/cardtext"
                             android:textSize="16sp"
                             app:layout_constraintBottom_toTopOf="@id/level"
                             app:layout_constraintStart_toStartOf="parent"
@@ -679,14 +692,15 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="5dp"
                             android:layout_marginBottom="40dp"
-                            android:text="Beginner"
-                            android:textColor="@color/white"
+                            android:text="@string/beginner"
+                            android:textColor="@color/cardtext"
                             android:textSize="16sp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/txtToned" />
+                            app:layout_constraintTop_toBottomOf="@id/TONEDtext" />
 
                         <androidx.constraintlayout.utils.widget.ImageFilterView
+                            android:id="@+id/tonearm"
                             android:layout_width="166dp"
                             android:layout_height="128dp"
                             android:layout_marginStart="54dp"
@@ -706,7 +720,6 @@
                 </androidx.cardview.widget.CardView>
 
 
-
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardView22"
                     android:layout_width="187dp"
@@ -714,74 +727,72 @@
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginRight="8dp"
-                    app:cardBackgroundColor="#4368EC"
+                    app:cardBackgroundColor="@color/plancard2"
                     app:cardCornerRadius="10dp"
                     app:cardElevation="8dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent" >
+                    app:layout_constraintStart_toStartOf="parent">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
 
-
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:alpha="0.6"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
                             android:fitsSystemWindows="false"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/starback" />
+                            android:src="@drawable/starback"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
 
 
+                        <TextView
+                            android:id="@+id/txtToned2"
+                            style="bold"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/toned_arm2"
+                            android:textColor="@color/cardtext"
+                            android:textSize="16sp"
+                            app:layout_constraintBottom_toTopOf="@id/level1"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
 
-                    <TextView
-                        android:id="@+id/txtToned2"
-                        style="bold"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="5dp"
-                        android:layout_marginTop="40dp"
-                        android:text="TONED ARM"
-                        android:textColor="@color/white"
-                        android:textSize="16sp"
-                        app:layout_constraintBottom_toTopOf="@id/level1"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/level1"
-                        style="bold"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="5dp"
-                        android:layout_marginBottom="40dp"
-                        android:text="Advanced"
-                        android:textColor="@color/white"
-                        android:textSize="16sp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/txtToned2" />
+                        <TextView
+                            android:id="@+id/level1"
+                            style="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginBottom="40dp"
+                            android:text="@string/advanced"
+                            android:textColor="@color/cardtext"
+                            android:textSize="16sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/txtToned2" />
 
 
-                    <androidx.constraintlayout.utils.widget.ImageFilterView
-                        android:layout_width="166dp"
-                        android:layout_height="128dp"
-                        android:layout_marginStart="54dp"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/bicepgirl"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.0"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="1.0" />
+                        <androidx.constraintlayout.utils.widget.ImageFilterView
+                            android:layout_width="166dp"
+                            android:layout_height="128dp"
+                            android:layout_marginStart="54dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/bicepgirl"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0" />
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </androidx.cardview.widget.CardView>
@@ -856,7 +867,7 @@
                 android:layout_height="94dp"
                 android:layout_marginRight="12dp"
                 android:layout_weight="1"
-                app:cardBackgroundColor="#79F67E" >
+                app:cardBackgroundColor="@color/card3">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -879,7 +890,7 @@
                         android:layout_marginStart="5dp"
                         android:layout_marginTop="15dp"
                         android:text="BISCEPS"
-                        android:textColor="@color/white"
+                        android:textColor="@color/cardtext"
                         android:textSize="14sp"
                         app:layout_constraintBottom_toTopOf="@id/biceplevel"
                         app:layout_constraintStart_toStartOf="parent"
@@ -893,7 +904,7 @@
                         android:layout_marginStart="5dp"
                         android:layout_marginBottom="40dp"
                         android:text="4 Exercises"
-                        android:textColor="@color/white"
+                        android:textColor="@color/cardtext"
                         android:textSize="14sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -917,15 +928,14 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-
-
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
+                android:id="@+id/matcard1"
                 android:layout_width="0dp"
                 android:layout_height="94dp"
                 android:layout_weight="1"
-                app:cardBackgroundColor="#79F67E" >
+                app:cardBackgroundColor="@color/card2">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -948,7 +958,7 @@
                         android:layout_marginStart="5dp"
                         android:layout_marginTop="15dp"
                         android:text="CHEST"
-                        android:textColor="@color/white"
+                        android:textColor="@color/cardtext"
                         android:textSize="14sp"
                         app:layout_constraintBottom_toTopOf="@id/chesstlevel"
                         app:layout_constraintStart_toStartOf="parent"
@@ -962,7 +972,7 @@
                         android:layout_marginStart="5dp"
                         android:layout_marginBottom="40dp"
                         android:text="5 Exercises"
-                        android:textColor="@color/white"
+                        android:textColor="@color/cardtext"
                         android:textSize="14sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -1007,7 +1017,7 @@
                 android:layout_height="94dp"
                 android:layout_marginRight="12dp"
                 android:layout_weight="1"
-                app:cardBackgroundColor="#79F67E">
+                app:cardBackgroundColor="@color/card4">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -1029,8 +1039,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
                         android:layout_marginTop="15dp"
-                        android:text="YOGA"
-                        android:textColor="@color/white"
+                        android:text="@string/yoga"
+                        android:textColor="@color/cardtext"
                         android:textSize="14sp"
                         app:layout_constraintBottom_toTopOf="@id/yogalevel"
                         app:layout_constraintStart_toStartOf="parent"
@@ -1043,8 +1053,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
                         android:layout_marginBottom="40dp"
-                        android:text="4 Exercises"
-                        android:textColor="@color/white"
+                        android:text="@string/_4_exercises"
+                        android:textColor="@color/cardtext"
                         android:textSize="14sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -1074,7 +1084,7 @@
                 android:layout_width="0dp"
                 android:layout_height="94dp"
                 android:layout_weight="1"
-                app:cardBackgroundColor="#79F67E" >
+                app:cardBackgroundColor="@color/cardVBack">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -1097,7 +1107,7 @@
                         android:layout_marginStart="5dp"
                         android:layout_marginTop="15dp"
                         android:text="ABS"
-                        android:textColor="@color/white"
+                        android:textColor="@color/cardtext"
                         android:textSize="14sp"
                         app:layout_constraintBottom_toTopOf="@id/abslevel"
                         app:layout_constraintStart_toStartOf="parent"
@@ -1111,7 +1121,7 @@
                         android:layout_marginStart="5dp"
                         android:layout_marginBottom="40dp"
                         android:text="3 Exercises"
-                        android:textColor="@color/white"
+                        android:textColor="@color/cardtext"
                         android:textSize="14sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -1144,7 +1154,7 @@
             android:layout_marginStart="7dp"
             android:layout_marginTop="21dp"
             android:layout_marginBottom="15dp"
-            android:text="Active Workout Plan"
+            android:text="@string/active_workout_plan"
             android:textSize="12sp"
             app:layout_constraintBottom_toTopOf="@+id/cardView"
 
@@ -1152,6 +1162,17 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Searchbox" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="changemode"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="188dp"
+            tools:layout_editor_absoluteY="5dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

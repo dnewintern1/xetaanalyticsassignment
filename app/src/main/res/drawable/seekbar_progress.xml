@@ -2,7 +2,8 @@
     <!-- Full track -->
     <item>
         <shape>
-<!--            <solid android:color="#FFFFFF"/> &lt;!&ndash; your color &ndash;&gt;-->
+            <solid android:color="#FFFFFF"/> <!-- your color -->
+            <corners android:radius="5dp" /> <!-- add rounded corners -->
             <!-- add other attributes if needed -->
         </shape>
     </item>
@@ -11,7 +12,7 @@
     <item android:id="@android:id/progress">
         <scale android:scaleWidth="100%">
             <shape android:shape="rectangle" >
-                <corners android:radius="5dp" />
+                <corners android:radius="5dp" /> <!-- add rounded corners -->
                 <solid android:color="#C42727"/>
             </shape>
         </scale>

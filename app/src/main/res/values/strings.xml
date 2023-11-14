@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Xeta Analytics Assignment</string>
+    <string name="enhance_your_journey_with_ai_tracker">Enhance your journey with AI tracker</string>
+    <string name="build_bigger_nbiceps_unleash_nyour_arm_power">Build Bigger \nBiceps, Unleash \nYour Arm Power</string>
+    <string name="active_workout_plan">Active Workout Plan</string>
+    <string name="beginner">Beginner</string>
+    <string name="toned_arm">TONED ARM</string>
+    <string name="toned_arm2">TONED ARM</string>
+    <string name="advanced">Advanced</string>
+    <string name="workout_duration">Workout Duration</string>
+    <string name="_2_hours">2 hours</string>
+    <string name="accuracy">Accuracy</string>
+    <string name="_80">80%</string>
+    <string name="_15">15</string>
+    <string name="_802">80%</string>
+    <string name="_200_people_tracked_their_fitness">200+ people tracked their fitness</string>
+    <string name="why_haven_t_you_joined_them_yet">Why haven\'t you joined them yet?</string>
+    <string name="yoga">YOGA</string>
+    <string name="_4_exercises">4 Exercises</string>
 </resources>

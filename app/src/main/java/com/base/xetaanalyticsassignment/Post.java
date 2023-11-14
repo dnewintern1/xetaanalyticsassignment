@@ -1,12 +1,25 @@
 package com.base.xetaanalyticsassignment;
 
 
+import android.provider.ContactsContract;
+
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
 public class Post {
 
+    @SerializedName("success")
+    private boolean success;
+    public Data getData() {
+        return data;
+    }
 
-
+    @SerializedName("data")
+    private Data data;
 
     public class Data {
+
+        @SerializedName("section_1")
         private Section1 section_1;
         private Section2 section_2;
         private Section3 section_3;
@@ -31,6 +44,7 @@ public class Post {
     }
 
     public class Section1 {
+        @SerializedName("plan_name")
         private String plan_name;
         private String progress;
 
@@ -48,8 +62,8 @@ public class Post {
     public class Section2 {
         private String accuracy;
         private String workout_duration;
-        private int reps;
-        private int calories_burned;
+        private String reps;
+        private String calories_burned;
 
         // getters and setters
 
@@ -61,11 +75,11 @@ public class Post {
             return workout_duration;
         }
 
-        public int getReps() {
+        public String getReps() {
             return reps;
         }
 
-        public int getCalories_burned() {
+        public String getCalories_burned() {
             return calories_burned;
         }
     }
@@ -126,24 +140,5 @@ public class Post {
 // getters and setters
     }
 
-    public class Root {
-        private boolean success;
-        private Data data;
 
-        public boolean isSuccess() {
-            return success;
-        }
-
-        public Data getData() {
-            return data;
-        }
-
-        public String getMessage() {
-            return message;
-        }
-
-        private String message;
-
-        // getters and setters
-}
 }
