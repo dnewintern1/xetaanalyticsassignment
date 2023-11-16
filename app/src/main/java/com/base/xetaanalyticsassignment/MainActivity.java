@@ -1,8 +1,11 @@
 package com.base.xetaanalyticsassignment;
+import android.graphics.Color;
+import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 
 
 import android.util.Log;
+import android.util.TypedValue;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.SeekBar;
@@ -12,8 +15,11 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
+import androidx.cardview.widget.CardView;
 
 
+import com.google.android.material.card.MaterialCardView;
+import com.google.android.material.shape.CornerFamily;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -108,6 +114,24 @@ public class MainActivity extends AppCompatActivity {
                 biceplevel.setText(sf.getCategory_1().getNo_of_exercises());
                 dummychest.setText(sf.getCategory_2().getCategory_name());
                 chesstlevel.setText(sf.getCategory_2().getNo_of_exercises());
+
+//                // Create a gradient drawable
+//                GradientDrawable gradientDrawable = new GradientDrawable();
+//                gradientDrawable.setColors(new int[]{Color.parseColor("#ffc200"), Color.parseColor("#fca10b")});
+//                gradientDrawable.setGradientType(GradientDrawable.LINEAR_GRADIENT);
+//                gradientDrawable.setOrientation(GradientDrawable.Orientation.LEFT_RIGHT);
+//
+//// Set the corner radii for the top and bottom corners
+//                float[] cornerRadii = new float[]{10f, 10f, 10f, 10f, 0f, 0f, 0f, 0f};
+//                gradientDrawable.setCornerRadii(cornerRadii); // Use mutate() here
+//
+//// Apply the gradient drawable to your CardView
+//                CardView cardView = findViewById(R.id.materialCardView);
+//                cardView.setBackground(gradientDrawable);
+
+
+
+
 
 
             }

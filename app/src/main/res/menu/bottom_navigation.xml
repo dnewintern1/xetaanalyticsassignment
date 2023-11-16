@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/bottom_Explore"
+        android:title="Home"
+        android:icon="@drawable/colorcircrl"/>
+
+    <item android:id="@+id/bottom_Network"
+
+        android:icon="@drawable/frame"
+        tools:ignore="MenuTitle" />
+
+    <item android:id="@+id/bottom_Chat"
+
+        android:icon="@drawable/group"
+        tools:ignore="MenuTitle" />
+
+    <item android:id="@+id/bottom_Contacts"
+        android:icon="@drawable/vectord"
+        android:title="TODO" />
+</menu>
